@@ -1,0 +1,11 @@
+#SSL-Termination Rules - START (https://websupportrevolution.com)
+<IfModule mod_setenvif.c>
+   SetEnvIf WSR-HTTPS 1 HTTPS=on
+</IfModule>
+<IfModule mod_rewrite.c>
+   RewriteEngine On
+   RewriteCond %{HTTP:WSR-HTTPS} 1
+   RewriteRule .* - [E=HTTPS:on]
+</IfModule>
+#SSL-Termination Rules - END
+ErrorDocument 404 /404.txt

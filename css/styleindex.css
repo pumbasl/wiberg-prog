@@ -1,0 +1,92 @@
+.mainimg{
+	left: 0px;
+	width: 100%;
+	position: fixed;
+}
+
+#header{
+	z-index: 1;
+	position: fixed;
+	left: 0px;
+	width: 100%;
+	text-align: right;
+}
+
+#header ul{
+  font-family: Comic Sans MS, Comic Sans, cursive ;
+  text-align: center;
+  background: #406c70;
+}
+
+#header ul li{
+   list-style: none;
+   display: inline;
+ }
+
+#header ul li a{
+   color: #e1d5ce;
+   display: inline-block;
+   width: 225px;
+   padding: 10px;
+   text-decoration: none;
+}
+
+#header .logo{
+	text-align: left;
+}
+
+#header a:hover{
+  background: #477574;
+}
+
+.main{
+	background-color: #477574;
+}
+
+#content{
+  font-family: Trebuchet MS, sans-serif;
+  font-weight: 900;
+  width: 100%;
+  background-color: #FFFFFF;
+  position: absolute;
+  border-radius: 3px;
+  text-align: center;
+  top: 35%;
+  border: 5px solid #e3e3e3;
+  /*opacity: 0.8;*/
+}
+
+.indexbutton{
+  /*position: relative;
+  left: -11%;*/
+  position: relative;
+  margin-right: 365px;
+}
+
+#first{
+  display: inline-block;
+  position: relative;
+
+}
+
+#second{
+  display: inline-block;
+  position: relative;
+  margin-right: 50px;
+  margin-left: 40px;
+}
+
+#three{
+  display: inline-block;
+  position: relative;
+}
+
+#allimg{
+  padding: 40px;
+  margin-left: -98px;
+}
+
+.strela{
+  transform: rotate(90deg);
+  margin: auto;
+}

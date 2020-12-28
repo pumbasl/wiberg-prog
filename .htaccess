@@ -1,0 +1,15 @@
+#SSL-Termination Rules - START (https://websupportrevolution.com)
+<IfModule mod_setenvif.c>
+   SetEnvIf WSR-HTTPS 1 HTTPS=on
+</IfModule>
+<IfModule mod_rewrite.c>
+   RewriteEngine On
+   RewriteCond %{HTTP:WSR-HTTPS} 1
+   RewriteRule .* - [E=HTTPS:on]
+</IfModule>
+#SSL-Termination Rules - END
+# php_value date.timezone Europe/Moscow
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
